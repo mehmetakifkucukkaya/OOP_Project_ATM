@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HesapOlustur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="AnaSayfa ve User sınıfı tamamlandı">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnaSayfa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnaSayfa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GirisYap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GirisYap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GirisYap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HesapOlustur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Islemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Islemler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +57,29 @@
       <option name="presentableId" value="Default" />
       <updated>1671990887377</updated>
     </task>
+    <task id="LOCAL-00001" summary="AnaSayfa ve User sınıfı tamamlandı">
+      <created>1671997386828</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671997386828</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="AnaSayfa ve User sınıfı tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="AnaSayfa ve User sınıfı tamamlandı" />
   </component>
 </project>
