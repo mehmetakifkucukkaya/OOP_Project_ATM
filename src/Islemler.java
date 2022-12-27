@@ -17,6 +17,7 @@ public class Islemler{
         System.out.println("3-)Para Gönder");
         System.out.println("4-)Bakiye Görüntüle");
         System.out.println("5-)Diğer İşlemler");
+        System.out.println("6-)Çıkış Yap");
 
         System.out.println("\nLütfen yapmak istediğiniz işlemi seçin");
         secilenIslem = scanner.nextInt();
@@ -38,12 +39,19 @@ public class Islemler{
             case 5:
                 digerIslemler();
                 break;
+            case 6:
+                cikisYap();
+                break;
             default:
-                System.out.println("Geçersiz işlem seçtiniz! LÜtfen tekrar deneyin");
+                System.out.println("Geçersiz işlem seçtiniz! Lütfen tekrar deneyin");
                 islemMenu();
                 break;
         }
         }
+
+    public void cikisYap() {
+        anaSayfa.get().cikisYap();
+    }
 
     private void digerIslemler() {
         DigerIslemler digerIslem= new DigerIslemler();
@@ -60,7 +68,7 @@ public class Islemler{
         if(bakiye> gonderilecekTutar )
         {
             bakiye-= gonderilecekTutar;
-            System.out.println("Mevcut bakiye : "+bakiye);
+            System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
             // TODO: 27.12.2022 Buraya İşlem sonu mesajı  gelecek.
             islemMenu();
 
@@ -78,7 +86,6 @@ public class Islemler{
         System.out.println("Hesabınızdaki mevcut bakiye : "+bakiye);
         // TODO: 27.12.2022 Buraya İşlem sonu mesajı  gelecek.
         islemMenu();
-
     }
 
     private void paraYatir() {
@@ -86,12 +93,12 @@ public class Islemler{
         yatirilanTutar= scanner.nextInt();
 
         bakiye += yatirilanTutar;
-        System.out.println("Mevcut bakiye : "+bakiye);
+        System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
         // TODO: 27.12.2022 Buraya İşlem sonu mesajı  gelecek.
         islemMenu();
     }
 
-    public void paraCek(){
+    private void paraCek(){
 
         System.out.println("Lütfen çekmek istediginiz tutarı girin: ");
          cekilenTutar= scanner.nextInt();
@@ -108,7 +115,7 @@ public class Islemler{
             islemMenu();
         }
         // TODO: 27.12.2022 Buraya İşlem sonu mesajı  gelecek.
-        System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Bakiye görüntüleme fonksiyonu yazılınca bu kaldırılacak.
+        System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
         islemMenu();
     }
 

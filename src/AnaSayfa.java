@@ -67,7 +67,7 @@ public class AnaSayfa {
     }
 
 
-    private void cikisYap() {
+    public void cikisYap() {
         System.out.println("Atm'den Çıkış Yapılıyor...");
         System.out.println("Hoşçakalın!");
 

@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="İşlemler sınıfında işlemMenu metodu yazıldı">
+    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="İşlemler sınıfı tamamlandı">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnaSayfa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnaSayfa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Islemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Islemler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mesajlar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mesajlar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/DigerIslemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/digerIslemler/DigerIslemler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672001283450</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="İşlemler sınıfı tamamlandı">
+      <created>1672175334357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672175334357</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,7 +94,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AnaSayfa ve User sınıfı tamamlandı" />
     <MESSAGE value="İşlemler sınıfında işlemMenu metodu yazıldı" />
-    <option name="LAST_COMMIT_MESSAGE" value="İşlemler sınıfında işlemMenu metodu yazıldı" />
+    <MESSAGE value="İşlemler sınıfı tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="İşlemler sınıfı tamamlandı" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP_Project_ATM$Main.ic" NAME="Main Coverage Results" MODIFIED="1672169779646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
