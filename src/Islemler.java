@@ -7,6 +7,8 @@ public class Islemler{
     int gonderilecekNo, secilenIslem;
     double yatirilanTutar,cekilenTutar,gonderilecekTutar;
     final ThreadLocal<AnaSayfa> anaSayfa = ThreadLocal.withInitial(() -> new AnaSayfa());
+
+    final ThreadLocal<Mesajlar> mesaj = ThreadLocal.withInitial(() -> new Mesajlar());
     Scanner scanner = new Scanner(System.in);
     double bakiye =anaSayfa.get().musteri.getBakiye() ;
 
@@ -69,23 +71,17 @@ public class Islemler{
         {
             bakiye-= gonderilecekTutar;
             System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
-            // TODO: 27.12.2022 Buraya İşlem sonu mesajı  gelecek.
-            islemMenu();
-
+            mesaj.get().islemSonuMesaji();
         }
         else
         {
-            // TODO: 27.12.2022 Buraya YetersizBakiyeMesaji gelecek.
-            System.out.println("Hesabınızda yeterli bakiye bulunmamaktadır!");
-            System.out.println("İşlemler menüsüne dönülüyor...\n");
-            islemMenu();
+            mesaj.get().yetersizBakiyeMesaji();
         }
     }
 
     private void bakiyeGoruntule() {
         System.out.println("Hesabınızdaki mevcut bakiye : "+bakiye);
-        // TODO: 27.12.2022 Buraya İşlem sonu mesajı  gelecek.
-        islemMenu();
+        mesaj.get().islemSonuMesaji();
     }
 
     private void paraYatir() {
@@ -94,8 +90,7 @@ public class Islemler{
 
         bakiye += yatirilanTutar;
         System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
-        // TODO: 27.12.2022 Buraya İşlem sonu mesajı  gelecek.
-        islemMenu();
+        mesaj.get().islemSonuMesaji();
     }
 
     private void paraCek(){
@@ -109,14 +104,12 @@ public class Islemler{
         }
         else
         {
-            // TODO: 27.12.2022 Buraya YetersizBakiyeMesaji gelecek.
-            System.out.println("Hesabınızda yeterli bakiye bulunmamaktadır!");
-            System.out.println("İşlemler menüsüne dönülüyor...\n");
-            islemMenu();
+            mesaj.get().yetersizBakiyeMesaji();
         }
-        // TODO: 27.12.2022 Buraya İşlem sonu mesajı  gelecek.
         System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
-        islemMenu();
+        mesaj.get().islemSonuMesaji();
+
+
     }
 
 }

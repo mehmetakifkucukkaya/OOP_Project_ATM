@@ -7,7 +7,7 @@ public class Mesajlar {
 
     public void islemSonuMesaji()
     {
-        System.out.println("Başak bir işlem yapmak istiyor musunuz?\n 'E-H'");
+        System.out.println("\nBaşak bir işlem yapmak istiyor musunuz?\n 'E-H'");
         secim= scanner.next().charAt(0);
 
         if (secim == 'E' || secim == 'e')
@@ -24,6 +24,9 @@ public class Mesajlar {
     {
         System.out.println("Hesabınızda yeterli bakiye bulunmamaktadır!");
         System.out.println("İşlemler menüsüne dönülüyor...\n");
+
+        islemler.islemMenu();
+
     }
 
 }
