@@ -2,9 +2,15 @@ import java.util.Scanner;
 
 public class AnaSayfa {
     private int girilenNo, girilenSifre, kalanHak = 3;
-
     User musteri = new User();
+    final ThreadLocal<Islemler> islemler = ThreadLocal.withInitial(() -> new Islemler());
     Scanner scanner = new Scanner(System.in);
+
+    public void musteriBilgi()
+    {
+        System.out.println( musteri.getBakiye());;
+
+    }
     public void menu(){
         System.out.println("Merhaba! Bankamıza Hoşgeldiniz...");
 
@@ -37,27 +43,27 @@ public class AnaSayfa {
 
     public void girisYap() {
 
-            while (kalanHak > 0) {
-                System.out.println("Lütfen müşteri numaranızı girin: ");
-                girilenNo = scanner.nextInt();
+        while (kalanHak > 0) {
+            System.out.println("Lütfen müşteri numaranızı girin: ");
+            girilenNo = scanner.nextInt();
 
-                System.out.println("Lütfen şifrenizi girin: ");
-                girilenSifre = scanner.nextInt();
+            System.out.println("Lütfen şifrenizi girin: ");
+            girilenSifre = scanner.nextInt();
 
-                if (girilenNo == musteri.getMusteriNo() && girilenSifre == musteri.getMusteriSifre()) {
-                    System.out.println("Giriş başarıyla yapıldı");
-                    break;
-                    //Todo -> İşlemler kısmına yönlendir
+            if (girilenNo == musteri.getMusteriNo() && girilenSifre == musteri.getMusteriSifre()) {
+                System.out.println("Giriş başarıyla yapıldı\n");
+                islemler.get().islemMenu();
+                break;
+            } else {
+                System.out.println("********* GiRİŞ BAŞARISIZ OLDU *********");
+                kalanHak--;
+                if (kalanHak <= 0) {
+                    System.out.println("Hesabınız Bloke Edildi !");
                 } else {
-                    System.out.println("********* GiRİŞ BAŞARISIZ OLDU *********");
-                    kalanHak--;
-                    if (kalanHak <= 0) {
-                        System.out.println("Hesabınız Bloke Edildi !");
-                    } else {
-                        //Todo -> Ana Sayfaya yönlendir
-                    }
+                    //Todo -> Ana Sayfaya yönlendir
                 }
             }
+        }
     }
 
 
