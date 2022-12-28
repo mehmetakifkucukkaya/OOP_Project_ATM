@@ -5,7 +5,6 @@ public class User {
 
     private int musteriNo=1,musteriSifre=1;
     private  double bakiye=1000;
-
     public int getMusteriNo() {
         return musteriNo;
     }
@@ -26,7 +25,7 @@ public class User {
         return bakiye;
     }
 
-    public void setBakiye(int bakiye) {
+    public void setBakiye(double bakiye) {
         this.bakiye = bakiye;
     }
 

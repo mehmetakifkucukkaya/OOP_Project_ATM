@@ -1,16 +1,11 @@
 import java.util.Scanner;
 
 public class AnaSayfa {
-    private int girilenNo, girilenSifre, kalanHak = 3;
+
     User musteri = new User();
+    private int girilenNo, girilenSifre, kalanHak = 3;
     final ThreadLocal<Islemler> islemler = ThreadLocal.withInitial(() -> new Islemler());
     Scanner scanner = new Scanner(System.in);
-
-    public void musteriBilgi()
-    {
-        System.out.println( musteri.getBakiye());;
-
-    }
     public void menu(){
         System.out.println("Merhaba! Bankamıza Hoşgeldiniz...");
 
@@ -38,7 +33,6 @@ public class AnaSayfa {
                 menu();
                 break;
         }
-
     }
 
     public void girisYap() {
@@ -81,7 +75,7 @@ public class AnaSayfa {
 
         System.out.println("Hesabınız Başarıyla Oluşturuldu");
 
-        System.out.println("Sizi Ana Sayfaya Yönlendiriyorum...\n");
+        System.out.println("Ana Sayfaya Yönlendiriliyorsunuz...\n");
 
         menu();
 

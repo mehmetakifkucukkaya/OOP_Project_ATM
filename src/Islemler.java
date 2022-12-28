@@ -1,5 +1,3 @@
-import digerIslemler.DigerIslemler;
-
 import java.util.Scanner;
 
 public class Islemler{
@@ -7,7 +5,6 @@ public class Islemler{
     int gonderilecekNo, secilenIslem;
     double yatirilanTutar,cekilenTutar,gonderilecekTutar;
     final ThreadLocal<AnaSayfa> anaSayfa = ThreadLocal.withInitial(() -> new AnaSayfa());
-
     final ThreadLocal<Mesajlar> mesaj = ThreadLocal.withInitial(() -> new Mesajlar());
     Scanner scanner = new Scanner(System.in);
     double bakiye =anaSayfa.get().musteri.getBakiye() ;
@@ -45,21 +42,15 @@ public class Islemler{
                 cikisYap();
                 break;
             default:
-                System.out.println("Geçersiz işlem seçtiniz! Lütfen tekrar deneyin");
+                System.out.println("Geçersiz işlem seçtiniz! Lütfen tekrar deneyin\n");
                 islemMenu();
                 break;
         }
-        }
+    }
 
     public void cikisYap() {
         anaSayfa.get().cikisYap();
     }
-
-    private void digerIslemler() {
-        DigerIslemler digerIslem= new DigerIslemler();
-        digerIslem.menu();
-    }
-
     private void paraGonder() {
         System.out.println("Lütfen para göndermek istediğiniz kişinin Müşteri Numarasını girin: ");
         gonderilecekNo = scanner.nextInt();
@@ -78,6 +69,7 @@ public class Islemler{
             mesaj.get().yetersizBakiyeMesaji();
         }
     }
+
 
     private void bakiyeGoruntule() {
         System.out.println("Hesabınızdaki mevcut bakiye : "+bakiye);
@@ -108,10 +100,12 @@ public class Islemler{
         }
         System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
         mesaj.get().islemSonuMesaji();
-
-
     }
 
+    private void digerIslemler() {
+        DigerIslemler digerIslem= new DigerIslemler();
+        digerIslem.menu();
+    }
 }
 
 
