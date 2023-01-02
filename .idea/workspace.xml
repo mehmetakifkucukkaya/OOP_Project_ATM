@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="DigerIslemler sınıfında düzenlemeler yapıldı">
+    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="BagisIslemleri sınıfı tamamlandı">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnaSayfa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnaSayfa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BagisIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BagisIslemleri.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DigerIslemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DigerIslemler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Islemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Islemler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EhliyetIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EhliyetIslemleri.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672176843352</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="BagisIslemleri sınıfı tamamlandı">
+      <created>1672692484473</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672692484473</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,7 +123,8 @@
     <MESSAGE value="İşlemler sınıfı tamamlandı" />
     <MESSAGE value="Mesajlar sınıfı tamamlandı" />
     <MESSAGE value="İşlemler sınıfındaki Todo'ların bir kısmı yapıldı" />
-    <option name="LAST_COMMIT_MESSAGE" value="İşlemler sınıfındaki Todo'ların bir kısmı yapıldı" />
+    <MESSAGE value="BagisIslemleri sınıfı tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="BagisIslemleri sınıfı tamamlandı" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP_Project_ATM$Main.ic" NAME="Main Coverage Results" MODIFIED="1672169779646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

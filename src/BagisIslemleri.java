@@ -20,9 +20,6 @@ public class BagisIslemleri extends Islemler{
 
         System.out.println(vakiflar);
 
-        System.out.println("\nLütfen bağış yapmak istediğiniz vakfı seçiniz: ");
-        secilenVakif= scanner.nextInt();
-
         System.out.println("Bağış Miktarını Giriniz: ");
         bagisMiktari=scanner.nextDouble();
 
@@ -36,25 +33,33 @@ public class BagisIslemleri extends Islemler{
            bakiye-=bagisMiktari;
        }
 
+
+        System.out.println("\nLütfen bağış yapmak istediğiniz vakfı seçiniz: ");
+        secilenVakif= scanner.nextInt();
+
        switch (secilenVakif)
        {
            case 1:
                System.out.println("Afad'a "+ bagisMiktari + " TL bağış yapılmıştır.");
+               System.out.println("Mevcut Bakiyeniz: "+bakiye);
                mesaj.islemSonuMesaji();
                break;
            case 2:
                System.out.println("Lösev'e "+ bagisMiktari + " TL bağış yapılmıştır.");
+               System.out.println("Mevcut Bakiyeniz: "+bakiye);
                mesaj.islemSonuMesaji();
 
                break;
            case 3:
                System.out.println("KızılAy'a "+ bagisMiktari + " TL bağış yapılmıştır.");
+               System.out.println("Mevcut Bakiyeniz: "+bakiye);
                mesaj.islemSonuMesaji();
-
                break;
            case 4:
-               mesaj.islemSonuMesaji();
                System.out.println("Mehmetçik Vakfına "+ bagisMiktari + " TL bağış yapılmıştır.");
+               System.out.println("Mevcut Bakiyeniz: "+bakiye);
+               mesaj.islemSonuMesaji();
+
                break;
            default:
                System.out.println("Geçersiz Giriş Lütfen Tekrar deneyin");
@@ -62,6 +67,6 @@ public class BagisIslemleri extends Islemler{
                break;
        }
 
-        System.out.println("Mevcut Bakiyeniz: "+bakiye);
+
     }
 }

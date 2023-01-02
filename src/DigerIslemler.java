@@ -4,6 +4,7 @@ public class DigerIslemler{
 
     User musteri = new User();
     BagisIslemleri bgs = new BagisIslemleri();
+    EhliyetIslemleri ehliyet = new EhliyetIslemleri();
     int secilenIslem;
     Scanner scanner = new Scanner(System.in);
     Islemler islemler = new Islemler();
@@ -33,7 +34,7 @@ public class DigerIslemler{
                 //sinavOdemeleri();
                 break;
             case 3:
-                //ehliyetOdemeleri();
+                ehliyet.ehliyetMenu();
                 break;
             case 4:
                 //dijitalOyunOdemeleri();
