@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class DigerIslemler{
 
     User musteri = new User();
+    BagisIslemleri bgs = new BagisIslemleri();
     int secilenIslem;
     Scanner scanner = new Scanner(System.in);
     Islemler islemler = new Islemler();
@@ -41,7 +42,7 @@ public class DigerIslemler{
                 //vergiOdemeleri();
                 break;
             case 6:
-                //bagisIslemeri();
+                bgs.bagisMenu();
                 break;
             case 7:
                 //krediIslemeri();

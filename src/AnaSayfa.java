@@ -54,7 +54,7 @@ public class AnaSayfa {
                 if (kalanHak <= 0) {
                     System.out.println("Hesabınız Bloke Edildi !");
                 } else {
-                    //Todo -> Ana Sayfaya yönlendir
+                    menu();
                 }
             }
         }

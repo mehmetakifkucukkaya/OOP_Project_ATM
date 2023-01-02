@@ -4,7 +4,7 @@ import java.util.Map;
 public class User {
 
     private int musteriNo=1,musteriSifre=1;
-    private  double bakiye=1000;
+    private  double bakiye=100000;
     public int getMusteriNo() {
         return musteriNo;
     }
@@ -29,7 +29,6 @@ public class User {
         this.bakiye = bakiye;
     }
 
-    //Map<Integer,Integer> users = new HashMap<>();
 
 
 }

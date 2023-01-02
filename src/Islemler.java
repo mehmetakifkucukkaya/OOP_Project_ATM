@@ -14,9 +14,8 @@ public class Islemler{
         System.out.println("1-)Para Yatır");
         System.out.println("2-)Para Çek");
         System.out.println("3-)Para Gönder");
-        System.out.println("4-)Bakiye Görüntüle");
-        System.out.println("5-)Diğer İşlemler");
-        System.out.println("6-)Çıkış Yap");
+        System.out.println("4-)Diğer İşlemler");
+        System.out.println("5-)Çıkış Yap");
 
         System.out.println("\nLütfen yapmak istediğiniz işlemi seçin");
         secilenIslem = scanner.nextInt();
@@ -33,12 +32,9 @@ public class Islemler{
                 paraGonder();
                 break;
             case 4:
-                bakiyeGoruntule();
-                break;
-            case 5:
                 digerIslemler();
                 break;
-            case 6:
+            case 5:
                 cikisYap();
                 break;
             default:
@@ -61,7 +57,7 @@ public class Islemler{
         if(bakiye> gonderilecekTutar )
         {
             bakiye-= gonderilecekTutar;
-            System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
+            System.out.println("Mevcut bakiye : "+bakiye);
             mesaj.get().islemSonuMesaji();
         }
         else
@@ -69,19 +65,12 @@ public class Islemler{
             mesaj.get().yetersizBakiyeMesaji();
         }
     }
-
-
-    private void bakiyeGoruntule() {
-        System.out.println("Hesabınızdaki mevcut bakiye : "+bakiye);
-        mesaj.get().islemSonuMesaji();
-    }
-
     private void paraYatir() {
         System.out.println("Lütfen yatırmak istediginiz tutarı girin: ");
         yatirilanTutar= scanner.nextInt();
 
         bakiye += yatirilanTutar;
-        System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
+        System.out.println("Mevcut bakiye : "+bakiye);
         mesaj.get().islemSonuMesaji();
     }
 
@@ -98,7 +87,7 @@ public class Islemler{
         {
             mesaj.get().yetersizBakiyeMesaji();
         }
-        System.out.println("Mevcut bakiye : "+bakiye); // TODO: 27.12.2022  Uygulama bittikten sonra burası kalkacak
+        System.out.println("Mevcut bakiye : "+bakiye);
         mesaj.get().islemSonuMesaji();
     }
 

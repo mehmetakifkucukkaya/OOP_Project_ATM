@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="İşlemler sınıfındaki Todo'ların bir kısmı yapıldı">
-      <change afterPath="$PROJECT_DIR$/src/DigerIslemler.java" afterDir="false" />
+    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="DigerIslemler sınıfında düzenlemeler yapıldı">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnaSayfa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnaSayfa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BagisIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BagisIslemleri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DigerIslemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DigerIslemler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Islemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Islemler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mesajlar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mesajlar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/BagisIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BagisIslemleri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/BorsaIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BorsaIslemleri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/DigerIslemler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/DijitalOyunOdemeleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DijitalOyunOdemeleri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/DovizVeAltinIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DovizVeAltinIslemleri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/EhliyetIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EhliyetIslemleri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/FaturaYatir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaturaYatir.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/KrediIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KrediIslemleri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/SinavOdemeleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SinavOdemeleri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/digerIslemler/VergiOdeme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VergiOdeme.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +38,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/GRUNDIG/Documents/GitHub/repos/OOP_Project_ATM/src",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/GRUNDIG/Documents/GitHub/repos/OOP_Project_ATM/src&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\GRUNDIG\Documents\GitHub\repos\OOP_Project_ATM\src" />
