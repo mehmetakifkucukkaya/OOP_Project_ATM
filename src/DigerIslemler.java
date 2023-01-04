@@ -8,8 +8,9 @@ public class DigerIslemler{
     SinavOdemeleri sinav = new SinavOdemeleri();
     FaturaYatir fatura  = new FaturaYatir();
     DijitalOyunOdemeleri oyun= new DijitalOyunOdemeleri();
-
     SansOyunlari sansOyunlari = new SansOyunlari();
+
+    BorsaIslemleri borsa = new BorsaIslemleri();
     int secilenIslem;
     Scanner scanner = new Scanner(System.in);
     Islemler islemler = new Islemler();
@@ -58,7 +59,7 @@ public class DigerIslemler{
                 //dovizIslemeri();
                 break;
             case 9:
-                //yatirimIslemeri();
+                borsa.borsaMenu();
                 break;
             case 10:
                 sansOyunlari.sansOyunMenu();

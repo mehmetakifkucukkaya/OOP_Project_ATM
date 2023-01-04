@@ -1,32 +1,33 @@
 import java.util.Random;
-public class SansOyunlari extends Islemler{
+public class SansOyunlari extends Islemler implements OdemeSablon{
 
     Random random = new Random();
-    Mesajlar mesaj=new Mesajlar();
-    private int uyeId,secim,kod;
+    Mesajlar mesaj = new Mesajlar();
+    private int uyeId, secim, kod;
     private double tutar;
-    public void sansOyunMenu()
-    {
+
+    public void sansOyunMenu() {
         System.out.println("Lütfen üye ID'sini giriniz: ");
-        uyeId=scanner.nextInt();
+        uyeId = scanner.nextInt();
 
         System.out.println("1-) Milli Piyango");
         System.out.println("2-) Türkie Jokey Kulübü");
         System.out.println("3-) Nesine.com");
 
         System.out.println("Lütfen oyunun kodunu giriniz: ");
-        secim=scanner.nextInt();
+        secim = scanner.nextInt();
 
-        switch (secim)
-        {
+        switch (secim) {
             case 1:
                 odeme("Milli Piyango");
                 mesaj.islemSonuMesaji();
                 break;
-            case 2: odeme("Türkiye Jokey Kulübü");
+            case 2:
+                odeme("Türkiye Jokey Kulübü");
                 mesaj.islemSonuMesaji();
                 break;
-            case 3: odeme("Nesine.com");
+            case 3:
+                odeme("Nesine.com");
                 mesaj.islemSonuMesaji();
                 break;
             default:
@@ -37,8 +38,8 @@ public class SansOyunlari extends Islemler{
 
     }
 
-    public void odeme(String sansOyunu)
-    {
+    @Override
+    public void odeme(String sansOyunu) {
         System.out.println("Lütfen Tutarı Giriniz: ");
         tutar=scanner.nextDouble();
 

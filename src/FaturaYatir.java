@@ -1,4 +1,4 @@
-public class FaturaYatir extends  Islemler{
+public class FaturaYatir extends  Islemler implements OdemeSablon{
     Mesajlar mesaj = new Mesajlar();
     private int faturaSecim;
     private double faturaTutari;
@@ -15,16 +15,16 @@ public class FaturaYatir extends  Islemler{
         switch (faturaSecim)
         {
             case 1:
-                faturaOdeme("Telefon");
+                odeme("Telefon");
                 mesaj.islemSonuMesaji();
                 break;
-            case 2: faturaOdeme("Su");
+            case 2: odeme("Su");
                 mesaj.islemSonuMesaji();
                 break;
-            case 3: faturaOdeme("Elektrik");
+            case 3: odeme("Elektrik");
                 mesaj.islemSonuMesaji();
                 break;
-            case 4:faturaOdeme("Doğalgaz");
+            case 4:odeme("Doğalgaz");
                 mesaj.islemSonuMesaji();
                 break;
             default:
@@ -34,8 +34,9 @@ public class FaturaYatir extends  Islemler{
         }
     }
 
-    public void faturaOdeme(String faturaTipi)
-    {
+
+    @Override
+    public void odeme(String faturaTipi) {
         System.out.println("Lütfen Fatura Tutarını Giriniz: ");
         faturaTutari=scanner.nextDouble();
 
@@ -51,6 +52,4 @@ public class FaturaYatir extends  Islemler{
         System.out.println(faturaTutari +" TL değerindeki "+ faturaTipi + " faturanız yatırılmıştır");
         System.out.println("Mevcut Bakiyeniz: "+bakiye);
     }
-
-
 }

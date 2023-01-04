@@ -1,5 +1,5 @@
 import java.util.Random;
-public class DijitalOyunOdemeleri extends Islemler{
+public class DijitalOyunOdemeleri extends Islemler implements OdemeSablon{
 
     Random random = new Random();
     Mesajlar mesaj=new Mesajlar();
@@ -34,8 +34,8 @@ public class DijitalOyunOdemeleri extends Islemler{
 
     }
 
-    public void odeme(String oyun)
-    {
+    @Override
+    public void odeme(String oyun) {
         System.out.println("Lütfen Tutarı Giriniz: ");
         tutar=scanner.nextDouble();
 
