@@ -16,13 +16,17 @@ public class SinavOdemeleri extends Islemler{
         {
             case 1:
                 sinavOdeme("YKS",yks);
+                mesaj.islemSonuMesaji();
                 break;
             case 2:
                 sinavOdeme("YDS",yds);
+                mesaj.islemSonuMesaji();
                 break;
-                case 3:
-            sinavOdeme("KPSS",kpss);
-            break;
+            case 3:
+                sinavOdeme("KPSS",kpss);
+                mesaj.islemSonuMesaji();
+                break;
+
         }
     }
 

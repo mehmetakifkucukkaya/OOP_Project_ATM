@@ -16,12 +16,16 @@ public class FaturaYatir extends  Islemler{
         {
             case 1:
                 faturaOdeme("Telefon");
+                mesaj.islemSonuMesaji();
                 break;
             case 2: faturaOdeme("Su");
+                mesaj.islemSonuMesaji();
                 break;
             case 3: faturaOdeme("Elektrik");
+                mesaj.islemSonuMesaji();
                 break;
             case 4:faturaOdeme("Doğalgaz");
+                mesaj.islemSonuMesaji();
                 break;
             default:
                 System.out.println("Geçersiz Giriş Lütfen Tekrar deneyin");

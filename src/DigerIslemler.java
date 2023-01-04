@@ -7,6 +7,8 @@ public class DigerIslemler{
     EhliyetIslemleri ehliyet = new EhliyetIslemleri();
     SinavOdemeleri sinav = new SinavOdemeleri();
     FaturaYatir fatura  = new FaturaYatir();
+
+    DijitalOyunOdemeleri oyun= new DijitalOyunOdemeleri();
     int secilenIslem;
     Scanner scanner = new Scanner(System.in);
     Islemler islemler = new Islemler();
@@ -39,7 +41,7 @@ public class DigerIslemler{
                 ehliyet.ehliyetMenu();
                 break;
             case 4:
-                //dijitalOyunOdemeleri();
+                oyun.oyunMenu();
                 break;
             case 5:
                 //vergiOdemeleri();
