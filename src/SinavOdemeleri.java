@@ -1,3 +1,45 @@
-public class SinavOdemeleri {
-    // TODO: 25.12.2022 YKS-KPSS
+public class SinavOdemeleri extends Islemler{
+    Mesajlar mesaj = new Mesajlar();
+
+    private  int sinavSecim;
+    private double  yks = 230, yds = 115, kpss = 130;
+    public void sinavMenu()
+    {
+        System.out.println("1-) Yks: 230 Tl");
+        System.out.println("2-) YDS: 115 TL");
+        System.out.println("3-) KPSS:130 TL");
+
+        System.out.println("Lütfen ödeme yapmak istediğiniz sınavı seçiniz: ");
+        sinavSecim=scanner.nextInt();
+
+        switch (sinavSecim)
+        {
+            case 1:
+                sinavOdeme("YKS",yks);
+                break;
+            case 2:
+                sinavOdeme("YDS",yds);
+                break;
+                case 3:
+            sinavOdeme("KPSS",kpss);
+            break;
+        }
+    }
+
+
+    public void sinavOdeme(String sinavTuru,double sinavUcreti)
+    {
+        if(bakiye >= sinavUcreti)
+        {
+            bakiye-=sinavUcreti;
+        }
+        else
+        {
+            mesaj.yetersizBakiyeMesaji();
+        }
+
+        System.out.println(sinavTuru + " başvurunuz tamamlanmıştır");
+        System.out.println("Mevcut Bakiyeniz: "+bakiye);
+    }
+
 }

@@ -5,6 +5,7 @@ public class DigerIslemler{
     User musteri = new User();
     BagisIslemleri bgs = new BagisIslemleri();
     EhliyetIslemleri ehliyet = new EhliyetIslemleri();
+    SinavOdemeleri sinav = new SinavOdemeleri();
     FaturaYatir fatura  = new FaturaYatir();
     int secilenIslem;
     Scanner scanner = new Scanner(System.in);
@@ -32,7 +33,7 @@ public class DigerIslemler{
                fatura.faturaMenu();
                 break;
             case 2:
-                //sinavOdemeleri();
+                sinav.sinavMenu();
                 break;
             case 3:
                 ehliyet.ehliyetMenu();
