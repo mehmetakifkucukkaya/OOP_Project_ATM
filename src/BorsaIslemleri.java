@@ -1,5 +1,4 @@
 public class BorsaIslemleri extends  Islemler{
-    // TODO: 25.12.2022 Hisse alıp satılabilecek (10 Hisse Yeterli)
     int secim,lotSayisi;
     double bfren=5230.8,issen=88.70,eregl=42.92,akbnk=19.65,sahol=44.86;
     public void borsaMenu()
