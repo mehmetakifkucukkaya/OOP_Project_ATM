@@ -5,6 +5,7 @@ public class DigerIslemler{
     User musteri = new User();
     BagisIslemleri bgs = new BagisIslemleri();
     EhliyetIslemleri ehliyet = new EhliyetIslemleri();
+    FaturaYatir fatura  = new FaturaYatir();
     int secilenIslem;
     Scanner scanner = new Scanner(System.in);
     Islemler islemler = new Islemler();
@@ -28,7 +29,7 @@ public class DigerIslemler{
         switch (secilenIslem)
         {
             case 1:
-                //faturaOdemeleri();
+               fatura.faturaMenu();
                 break;
             case 2:
                 //sinavOdemeleri();

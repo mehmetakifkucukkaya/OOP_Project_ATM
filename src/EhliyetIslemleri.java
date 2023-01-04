@@ -5,6 +5,10 @@ public class EhliyetIslemleri extends  Islemler{
     Mesajlar mesaj = new Mesajlar();
     char ehliyetSecim;
 
+    //Ehliyet Ücretleri
+    private double ehliyetA=825.70;
+    private double ehliyetB=2489.90;
+
     public void ehliyetMenu(){
     // Ehliyet türlerini tutan map yapısı
         Map<String, Double> ehliyetTuru  =
@@ -19,36 +23,31 @@ public class EhliyetIslemleri extends  Islemler{
 
         if (ehliyetSecim == 'a' || ehliyetSecim == 'A')
         {
-            if (bakiye < 825.0)
+            if (bakiye < ehliyetA)
             {
                 mesaj.yetersizBakiyeMesaji();
             }
             else
             {
                 System.out.println("Ehliyet Harciniz Yatirildi!");
-                bakiye -= 825.0;
+                bakiye -= ehliyetA;
                 System.out.println("Mevcut Bakiyeniz: "+bakiye);
                 mesaj.islemSonuMesaji();
             }
         }
         if (ehliyetSecim == 'b' || ehliyetSecim == 'B')
         {
-            if (bakiye < 2489.90)
+            if (bakiye < ehliyetB)
             {
                 mesaj.yetersizBakiyeMesaji();
             }
             else
             {
                 System.out.println("Ehliyet Harciniz Yatirildi!");
-                bakiye -= 2489.90;
+                bakiye -= ehliyetB;
                 System.out.println("Mevcut Bakiyeniz: "+bakiye);
                 mesaj.islemSonuMesaji();;
             }
         }
-
-
     }
-
-
-
 }
