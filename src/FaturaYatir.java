@@ -1,5 +1,4 @@
 public class FaturaYatir extends  Islemler implements OdemeSablon{
-    Mesajlar mesaj = new Mesajlar();
     private int faturaSecim;
     private double faturaTutari;
     public void faturaMenu()
@@ -16,16 +15,16 @@ public class FaturaYatir extends  Islemler implements OdemeSablon{
         {
             case 1:
                 odeme("Telefon");
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 2: odeme("Su");
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 3: odeme("Elektrik");
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 4:odeme("Doğalgaz");
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             default:
                 System.out.println("Geçersiz Giriş Lütfen Tekrar deneyin");
@@ -46,7 +45,7 @@ public class FaturaYatir extends  Islemler implements OdemeSablon{
         }
         else
         {
-            mesaj.yetersizBakiyeMesaji();
+            yetersizBakiyeMesaji.mesaj();
         }
 
         System.out.println(faturaTutari +" TL değerindeki "+ faturaTipi + " faturanız yatırılmıştır");

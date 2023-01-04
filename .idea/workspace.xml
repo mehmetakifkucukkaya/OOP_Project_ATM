@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="SansOyunlari sınıfı tamamlandı">
-      <change afterPath="$PROJECT_DIR$/src/OdemeSablon.java" afterDir="false" />
+    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="OdemeSablon arayüzü oluşturuldu ve BorsaIslemleri sınıfı tamamlandı">
+      <change afterPath="$PROJECT_DIR$/src/IslemSonuMesaji.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/YetersizBakiyeMesaji.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BagisIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BagisIslemleri.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BorsaIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BorsaIslemleri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DigerIslemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DigerIslemler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DijitalOyunOdemeleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DijitalOyunOdemeleri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EhliyetIslemleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EhliyetIslemleri.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FaturaYatir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaturaYatir.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Islemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Islemler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mesajlar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mesajlar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SansOyunlari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SansOyunlari.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SinavOdemeleri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SinavOdemeleri.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -155,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672815979913</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="OdemeSablon arayüzü oluşturuldu ve BorsaIslemleri sınıfı tamamlandı">
+      <created>1672861503988</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672861503988</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,7 +193,8 @@
     <MESSAGE value="SinavOdemeleri sınıfı tamamlandı" />
     <MESSAGE value="DijitalOyunOdemeleri sınıfı tamamlandı" />
     <MESSAGE value="SansOyunlari sınıfı tamamlandı" />
-    <option name="LAST_COMMIT_MESSAGE" value="SansOyunlari sınıfı tamamlandı" />
+    <MESSAGE value="OdemeSablon arayüzü oluşturuldu ve BorsaIslemleri sınıfı tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="OdemeSablon arayüzü oluşturuldu ve BorsaIslemleri sınıfı tamamlandı" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP_Project_ATM$Main.ic" NAME="Main Coverage Results" MODIFIED="1672169779646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

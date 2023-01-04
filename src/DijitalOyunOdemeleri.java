@@ -2,7 +2,6 @@ import java.util.Random;
 public class DijitalOyunOdemeleri extends Islemler implements OdemeSablon{
 
     Random random = new Random();
-    Mesajlar mesaj=new Mesajlar();
     private int secim,kod;
     private double tutar;
     public void oyunMenu()
@@ -18,13 +17,13 @@ public class DijitalOyunOdemeleri extends Islemler implements OdemeSablon{
        {
            case 1:
                odeme("PUBG Mobile");
-               mesaj.islemSonuMesaji();
+               islemSonuMesaji.mesaj();
                break;
            case 2: odeme("League of Legends");
-               mesaj.islemSonuMesaji();
+               islemSonuMesaji.mesaj();
                break;
            case 3: odeme("Valorant RP");
-               mesaj.islemSonuMesaji();
+               islemSonuMesaji.mesaj();
                break;
            default:
                System.out.println("Geçersiz Giriş Lütfen Tekrar deneyin");
@@ -47,7 +46,7 @@ public class DijitalOyunOdemeleri extends Islemler implements OdemeSablon{
         }
         else
         {
-            mesaj.yetersizBakiyeMesaji();
+            yetersizBakiyeMesaji.mesaj();
         }
 
         System.out.println(tutar +" değerinde "+ oyun + " kodu alınmıştır ");

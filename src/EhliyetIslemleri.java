@@ -1,8 +1,6 @@
 import java.util.Map;
 
 public class EhliyetIslemleri extends  Islemler{
-
-    Mesajlar mesaj = new Mesajlar();
     char ehliyetSecim;
 
     //Ehliyet Ücretleri
@@ -25,28 +23,28 @@ public class EhliyetIslemleri extends  Islemler{
         {
             if (bakiye < ehliyetA)
             {
-                mesaj.yetersizBakiyeMesaji();
+                yetersizBakiyeMesaji.mesaj();
             }
             else
             {
                 System.out.println("Ehliyet Harciniz Yatirildi!");
                 bakiye -= ehliyetA;
                 System.out.println("Mevcut Bakiyeniz: "+bakiye);
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
             }
         }
         if (ehliyetSecim == 'b' || ehliyetSecim == 'B')
         {
             if (bakiye < ehliyetB)
             {
-                mesaj.yetersizBakiyeMesaji();
+                yetersizBakiyeMesaji.mesaj();
             }
             else
             {
                 System.out.println("Ehliyet Harciniz Yatirildi!");
                 bakiye -= ehliyetB;
                 System.out.println("Mevcut Bakiyeniz: "+bakiye);
-                mesaj.islemSonuMesaji();;
+                islemSonuMesaji.mesaj();
             }
         }
     }

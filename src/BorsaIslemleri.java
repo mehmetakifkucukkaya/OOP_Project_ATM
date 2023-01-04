@@ -2,7 +2,6 @@ public class BorsaIslemleri extends  Islemler{
     // TODO: 25.12.2022 Hisse alıp satılabilecek (10 Hisse Yeterli)
     int secim,lotSayisi;
     double bfren=5230.8,issen=88.70,eregl=42.92,akbnk=19.65,sahol=44.86;
-    Mesajlar mesaj = new Mesajlar();
     public void borsaMenu()
     {
         System.out.println("Borsa Menüsüne Hoşgeldiniz");
@@ -24,23 +23,23 @@ public class BorsaIslemleri extends  Islemler{
         {
             case 1:
                 hisseAl("BFREN",bfren,lotSayisi);
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 2:
                 hisseAl("ISSEN",issen,lotSayisi);
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 3:
                 hisseAl("EREGL",eregl,lotSayisi);
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 4:
                 hisseAl("AKBNK",akbnk,lotSayisi);
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 5:
-                hisseAl("SAHOL",akbnk,lotSayisi);
-                mesaj.islemSonuMesaji();
+                hisseAl("SAHOL",sahol,lotSayisi);
+                islemSonuMesaji.mesaj();
                 break;
             default:
                 System.out.println("Geçersiz Hisse Kodu ! Lütfen Tekrar deneyin");
@@ -59,7 +58,7 @@ public class BorsaIslemleri extends  Islemler{
         }
         else
         {
-            mesaj.yetersizBakiyeMesaji();
+            yetersizBakiyeMesaji.mesaj();
         }
 
         System.out.println(hisseAdi + " adlı hisseden " + toplamTutar + "TL değerinde " + lotSayisi + " adet lot satın aldınız");

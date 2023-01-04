@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class BagisIslemleri extends Islemler{
 
     Scanner scanner = new Scanner(System.in);
-    Mesajlar mesaj = new Mesajlar();
     int secilenVakif;
     double bagisMiktari;
     public void bagisMenu()
@@ -25,7 +24,7 @@ public class BagisIslemleri extends Islemler{
 
        if(bakiye < bagisMiktari)
        {
-           mesaj.yetersizBakiyeMesaji();
+          yetersizBakiyeMesaji.mesaj();
            System.out.println("Bağış Menüsüne Dönülüyor... ");
            bagisMenu();
        }
@@ -42,24 +41,22 @@ public class BagisIslemleri extends Islemler{
            case 1:
                System.out.println("Afad'a "+ bagisMiktari + " TL bağış yapılmıştır.");
                System.out.println("Mevcut Bakiyeniz: "+bakiye);
-               mesaj.islemSonuMesaji();
+               islemSonuMesaji.mesaj();
                break;
            case 2:
                System.out.println("Lösev'e "+ bagisMiktari + " TL bağış yapılmıştır.");
                System.out.println("Mevcut Bakiyeniz: "+bakiye);
-               mesaj.islemSonuMesaji();
-
+               islemSonuMesaji.mesaj();
                break;
            case 3:
                System.out.println("KızılAy'a "+ bagisMiktari + " TL bağış yapılmıştır.");
                System.out.println("Mevcut Bakiyeniz: "+bakiye);
-               mesaj.islemSonuMesaji();
+               islemSonuMesaji.mesaj();
                break;
            case 4:
                System.out.println("Mehmetçik Vakfına "+ bagisMiktari + " TL bağış yapılmıştır.");
                System.out.println("Mevcut Bakiyeniz: "+bakiye);
-               mesaj.islemSonuMesaji();
-
+               islemSonuMesaji.mesaj();
                break;
            default:
                System.out.println("Geçersiz Giriş Lütfen Tekrar deneyin");

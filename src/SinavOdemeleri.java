@@ -1,6 +1,4 @@
 public class SinavOdemeleri extends Islemler{
-    Mesajlar mesaj = new Mesajlar();
-
     private  int sinavSecim;
     private double  yks = 230, yds = 115, kpss = 130;
     public void sinavMenu()
@@ -16,15 +14,15 @@ public class SinavOdemeleri extends Islemler{
         {
             case 1:
                 sinavOdeme("YKS",yks);
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 2:
                 sinavOdeme("YDS",yds);
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 3:
                 sinavOdeme("KPSS",kpss);
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
 
         }
@@ -39,7 +37,7 @@ public class SinavOdemeleri extends Islemler{
         }
         else
         {
-            mesaj.yetersizBakiyeMesaji();
+           yetersizBakiyeMesaji.mesaj();
         }
 
         System.out.println(sinavTuru + " başvurunuz tamamlanmıştır");

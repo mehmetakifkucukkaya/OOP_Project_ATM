@@ -2,7 +2,6 @@ import java.util.Random;
 public class SansOyunlari extends Islemler implements OdemeSablon{
 
     Random random = new Random();
-    Mesajlar mesaj = new Mesajlar();
     private int uyeId, secim, kod;
     private double tutar;
 
@@ -20,15 +19,15 @@ public class SansOyunlari extends Islemler implements OdemeSablon{
         switch (secim) {
             case 1:
                 odeme("Milli Piyango");
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 2:
                 odeme("Türkiye Jokey Kulübü");
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             case 3:
                 odeme("Nesine.com");
-                mesaj.islemSonuMesaji();
+                islemSonuMesaji.mesaj();
                 break;
             default:
                 System.out.println("Geçersiz Giriş Lütfen Tekrar deneyin");
@@ -50,7 +49,7 @@ public class SansOyunlari extends Islemler implements OdemeSablon{
         }
         else
         {
-            mesaj.yetersizBakiyeMesaji();
+           yetersizBakiyeMesaji.mesaj();
         }
 
         System.out.println(tutar +" değerinde "+ sansOyunu + " kupununuz tanımlanmıştır");

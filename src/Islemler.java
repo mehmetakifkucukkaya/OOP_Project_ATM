@@ -5,8 +5,10 @@ public class Islemler{
     int gonderilecekNo, secilenIslem;
     double yatirilanTutar,cekilenTutar,gonderilecekTutar;
     final ThreadLocal<AnaSayfa> anaSayfa = ThreadLocal.withInitial(() -> new AnaSayfa());
-    final ThreadLocal<Mesajlar> mesaj = ThreadLocal.withInitial(() -> new Mesajlar());
     Scanner scanner = new Scanner(System.in);
+     YetersizBakiyeMesaji yetersizBakiyeMesaji= new YetersizBakiyeMesaji();
+
+    IslemSonuMesaji islemSonuMesaji = new IslemSonuMesaji();
     double bakiye =anaSayfa.get().musteri.getBakiye() ;
 
     public void islemMenu()
@@ -58,11 +60,11 @@ public class Islemler{
         {
             bakiye-= gonderilecekTutar;
             System.out.println("Mevcut bakiye : "+bakiye);
-            mesaj.get().islemSonuMesaji();
+            islemSonuMesaji.mesaj();
         }
         else
         {
-            mesaj.get().yetersizBakiyeMesaji();
+            yetersizBakiyeMesaji.mesaj();
         }
     }
     private void paraYatir() {
@@ -71,7 +73,7 @@ public class Islemler{
 
         bakiye += yatirilanTutar;
         System.out.println("Mevcut bakiye : "+bakiye);
-        mesaj.get().islemSonuMesaji();
+        islemSonuMesaji.mesaj();
     }
 
     private void paraCek(){
@@ -85,10 +87,10 @@ public class Islemler{
         }
         else
         {
-            mesaj.get().yetersizBakiyeMesaji();
+            yetersizBakiyeMesaji.mesaj();
         }
         System.out.println("Mevcut bakiye : "+bakiye);
-        mesaj.get().islemSonuMesaji();
+        islemSonuMesaji.mesaj();
     }
 
     private void digerIslemler() {
