@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="Son Düzenlemeler yapıldı">
+    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="Son Düzenlemeler yapıldı v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArabaIKredi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArabaKredi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DigerIslemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DigerIslemler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Doviz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Doviz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EvIKredi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvKredi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnaSayfa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnaSayfa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
