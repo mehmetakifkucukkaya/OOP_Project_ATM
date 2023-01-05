@@ -16,10 +16,7 @@ public class DigerIslemler{
     Dolar dolar= new Dolar(musteri.getBakiye());
     int secilenIslem;
     Scanner scanner = new Scanner(System.in);
-    Islemler islemler = new Islemler();
     public  void menu(){
-
-        System.out.println(musteri.getBakiye());
 
         System.out.println("1-)  Fatura Ödeme");
         System.out.println("2-)  Sınav Harcı Ödeme");
@@ -34,39 +31,20 @@ public class DigerIslemler{
         System.out.println("\nLütfen yapmak istediğiniz işlemi seçin");
         secilenIslem = scanner.nextInt();
 
-        switch (secilenIslem)
-        {
-            case 1:
-               fatura.faturaMenu();
-                break;
-            case 2:
-                sinav.sinavMenu();
-                break;
-            case 3:
-                ehliyet.ehliyetMenu();
-                break;
-            case 4:
-                oyun.oyunMenu();
-                break;
-            case 5:
-                bgs.bagisMenu();
-                break;
-            case 6:
-                krediSecim();
-                break;
-            case 7:
-                dovizSecim();
-                break;
-            case 8:
-                borsa.borsaMenu();
-                break;
-            case 9:
-                sansOyunlari.sansOyunMenu();
-                break;
-            default:
+        switch (secilenIslem) {
+            case 1 -> fatura.faturaMenu();
+            case 2 -> sinav.sinavMenu();
+            case 3 -> ehliyet.ehliyetMenu();
+            case 4 -> oyun.oyunMenu();
+            case 5 -> bgs.bagisMenu();
+            case 6 -> krediSecim();
+            case 7 -> dovizSecim();
+            case 8 -> borsa.borsaMenu();
+            case 9 -> sansOyunlari.sansOyunMenu();
+            default -> {
                 System.out.println("Geçersiz işlem seçtiniz! Lütfen tekrar deneyin\n");
                 menu();
-                break;
+            }
         }
     }
 

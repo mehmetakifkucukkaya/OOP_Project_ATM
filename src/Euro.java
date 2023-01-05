@@ -38,7 +38,7 @@ public class Euro extends Doviz {
             {
                 bakiye -= tutar;
                 setMevcutDovizMiktari(getAlinacaDovizMiktari());
-                System.out.println("Mevcut Bakiyeniz: "+ bakiye + " ve mevcut Euro bakiyeniz: "+getMevcutDovizMiktari());
+                System.out.println("Mevcut Bakiyeniz: "+ formatter.format(bakiye) + " TL ve mevcut Euro bakiyeniz: "+getMevcutDovizMiktari());
                 islemSonuMesaji.mesaj();
             }
 

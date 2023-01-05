@@ -41,7 +41,7 @@ public class Dolar extends Doviz{
             {
                 bakiye -= tutar;
                 setMevcutDovizMiktari(getAlinacaDovizMiktari());
-                System.out.println("Mevcut Bakiyeniz: "+ bakiye + " ve mevcut Dolar bakiyeniz: "+getMevcutDovizMiktari());
+                System.out.println("Mevcut Bakiyeniz: "+formatter.format(bakiye) + " TL ve mevcut Dolar bakiyeniz: "+getMevcutDovizMiktari());
                 islemSonuMesaji.mesaj();
             }
 

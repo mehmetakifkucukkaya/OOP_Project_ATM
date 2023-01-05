@@ -1,12 +1,10 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 abstract class Doviz extends Islemler{
-    YetersizBakiyeMesaji yetersizBakiyeMesaji = new YetersizBakiyeMesaji();
     IslemSonuMesaji islemSonuMesaji= new IslemSonuMesaji();
 
     Scanner scanner = new Scanner(System.in);
-    private double alinacaDovizMiktari,mevcutDovizMiktari;;
+    private double alinacaDovizMiktari,mevcutDovizMiktari;
     double tutar;
     char secim;
     public abstract void dovizSatinAl();

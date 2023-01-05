@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="Giriş yapma fonksiyonu güncellendi">
+    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="Hatalar giderildi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnaSayfa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnaSayfa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DigerIslemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DigerIslemler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dolar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dolar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Doviz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Doviz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Euro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Euro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672910575482</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Hatalar giderildi">
+      <created>1672916691412</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1672916691412</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +234,8 @@
     <MESSAGE value="Doviz sınıfı oluşturuldu. Euro ve Dolar sınıfları tamamlandı" />
     <MESSAGE value="Son Düzenlemeler yapıldı" />
     <MESSAGE value="Giriş yapma fonksiyonu güncellendi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Giriş yapma fonksiyonu güncellendi" />
+    <MESSAGE value="Hatalar giderildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hatalar giderildi" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP_Project_ATM$Main.ic" NAME="Main Coverage Results" MODIFIED="1672169779646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
