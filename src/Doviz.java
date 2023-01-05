@@ -6,8 +6,6 @@ abstract class Doviz extends Islemler{
     IslemSonuMesaji islemSonuMesaji= new IslemSonuMesaji();
 
     Scanner scanner = new Scanner(System.in);
-
-    // TODO: 25.12.2022 Euro - Dolar  /  Altın (Gram,Çeyrek,Yarım,Tam) ve Gümüş (10gr,25gr,50gr,100gr,1kg) alınabilsin
     private double alinacaDovizMiktari,mevcutDovizMiktari;;
     double tutar;
     char secim;

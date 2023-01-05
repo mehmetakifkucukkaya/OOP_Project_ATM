@@ -10,8 +10,8 @@ public class DigerIslemler{
     DijitalOyunOdemeleri oyun= new DijitalOyunOdemeleri();
     SansOyunlari sansOyunlari = new SansOyunlari();
     BorsaIslemleri borsa = new BorsaIslemleri();
-    IKrediIslemleri arabakredi = new ArabaIKredi();
-    IKrediIslemleri evKredi = new EvIKredi();
+    IKrediIslemleri arabakredi = new ArabaKredi();
+    IKrediIslemleri evKredi = new EvKredi();
     Euro euro = new Euro(musteri.getBakiye());
     Dolar dolar= new Dolar(musteri.getBakiye());
     int secilenIslem;

@@ -1,6 +1,6 @@
 import java.util.Map;
 
-public class EvIKredi extends Islemler implements IKrediIslemleri {
+public class EvKredi extends Islemler implements IKrediIslemleri {
 
     int vadeEv;
     double krediTutari,odencekTutar,faizOraniEv;
