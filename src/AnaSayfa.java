@@ -38,28 +38,34 @@ public class AnaSayfa{
         }
     }
 
-    public void girisYap()  {
+    public void girisYap() {
 
-        while (kalanHak > 0) {
-            System.out.println("Lütfen müşteri numaranızı girin: ");
-            girilenNo = scanner.nextInt();
+        try {
+            while (kalanHak > 0) {
+                System.out.println("Lütfen müşteri numaranızı girin: ");
+                girilenNo = scanner.nextInt();
 
-            System.out.println("Lütfen şifrenizi girin: ");
-            girilenSifre = scanner.nextInt();
+                System.out.println("Lütfen şifrenizi girin: ");
+                girilenSifre = scanner.nextInt();
 
-            if (girilenNo == musteri.getMusteriNo() && girilenSifre == musteri.getMusteriSifre()) {
-                System.out.println("Giriş başarıyla yapıldı\n");
-                islemler.get().islemMenu();
-                break;
-            } else {
-                System.out.println("********* GiRİŞ BAŞARISIZ OLDU *********");
-                kalanHak--;
-                if (kalanHak <= 0) {
-                    System.out.println("Hesabınız Bloke Edildi !");
+                if (girilenNo == musteri.getMusteriNo() && girilenSifre == musteri.getMusteriSifre()) {
+                    System.out.println("Giriş başarıyla yapıldı\n");
+                    islemler.get().islemMenu();
+                    break;
                 } else {
-                    girisYap();
+                    System.out.println("********* GiRİŞ BAŞARISIZ OLDU *********");
+                    kalanHak--;
+                    if (kalanHak <= 0) {
+                        System.out.println("Hesabınız Bloke Edildi !");
+                    } else {
+                        girisYap();
+                    }
                 }
             }
+        }
+        catch (Exception ex)
+        {
+            System.out.println("Şifreniz ve Müşteri numaranız sadece rakamlardan oluşmalıdır!");
         }
     }
 

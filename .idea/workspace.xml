@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="Son Düzenlemeler yapıldı v2">
+    <list default="true" id="8f2a0ce5-fc21-442c-a46b-be80d853bcd2" name="Changes" comment="Giriş yapma fonksiyonu güncellendi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AnaSayfa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnaSayfa.java" afterDir="false" />
     </list>
@@ -185,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672907165344</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Giriş yapma fonksiyonu güncellendi">
+      <created>1672910575482</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672910575482</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +223,8 @@
     <MESSAGE value="KrediIslemleri tamamlandı" />
     <MESSAGE value="Doviz sınıfı oluşturuldu. Euro ve Dolar sınıfları tamamlandı" />
     <MESSAGE value="Son Düzenlemeler yapıldı" />
-    <option name="LAST_COMMIT_MESSAGE" value="Son Düzenlemeler yapıldı" />
+    <MESSAGE value="Giriş yapma fonksiyonu güncellendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Giriş yapma fonksiyonu güncellendi" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP_Project_ATM$Main.ic" NAME="Main Coverage Results" MODIFIED="1672169779646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
