@@ -52,7 +52,7 @@ public class SansOyunlari extends Islemler implements IOdemeSablon {
            yetersizBakiyeMesaji.mesaj();
         }
 
-        System.out.println(tutar +" değerinde "+ sansOyunu + " kupununuz tanımlanmıştır");
+        System.out.println(tutar +" değerinde "+ sansOyunu + " kuponunuz tanımlanmıştır");
         System.out.println("Kupon kodunuz: "+ kod);
 
         System.out.println("Mevcut Bakiyeniz: "+bakiye);

@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class User {
 
-    private int musteriNo=1,musteriSifre=1;
+    private int musteriNo,musteriSifre;
     private  double bakiye=100000;
     public int getMusteriNo() {
         return musteriNo;

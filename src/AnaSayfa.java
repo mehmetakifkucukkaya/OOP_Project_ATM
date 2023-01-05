@@ -1,11 +1,14 @@
 import java.util.Scanner;
 
-public class AnaSayfa {
+public class AnaSayfa{
 
     User musteri = new User();
+
+    public int kontrolNo,kontrolsifre;
     private int girilenNo, girilenSifre, kalanHak = 3;
     final ThreadLocal<Islemler> islemler = ThreadLocal.withInitial(() -> new Islemler());
     Scanner scanner = new Scanner(System.in);
+
     public void menu(){
         System.out.println("Merhaba! Bankamıza Hoşgeldiniz...");
 
@@ -35,7 +38,7 @@ public class AnaSayfa {
         }
     }
 
-    public void girisYap() {
+    public void girisYap()  {
 
         while (kalanHak > 0) {
             System.out.println("Lütfen müşteri numaranızı girin: ");
@@ -66,20 +69,26 @@ public class AnaSayfa {
         System.out.println("Hoşçakalın!");
 
     }
-    public void yeniHesapAc(){
-        System.out.println("Lütfen kullanmak istediğiniz müşteri numaranızı girin: ");
-        musteri.setMusteriNo(scanner.nextInt());
+    public void yeniHesapAc() {
 
-        System.out.println("Lütfen kullanmak istediğiniz şifrenizi girin: ");
-        musteri.setMusteriSifre(scanner.nextInt());
+        try {
+            System.out.println("Lütfen kullanmak istediğiniz müşteri numaranızı girin: ");
+            musteri.setMusteriNo(scanner.nextInt());
 
-        System.out.println("Hesabınız Başarıyla Oluşturuldu");
+            System.out.println("Lütfen kullanmak istediğiniz şifrenizi girin: ");
+            musteri.setMusteriSifre(scanner.nextInt());
 
-        System.out.println("Ana Sayfaya Yönlendiriliyorsunuz...\n");
+            System.out.println("Hesabınız Başarıyla Oluşturuldu");
 
-        menu();
+            System.out.println("Ana Sayfaya Yönlendiriliyorsunuz...\n");
+            menu();
+        }
+        catch (Exception e)
+        {
+            System.out.println("Şifreniz ve Müşteri numaranız sadece rakamlardan oluşmalıdır!");
+        }
 
-        //Todo -> musteriNo 6 haneli / şifre 4 haneli olsun. (Try-Catch ile kontrol et)
     }
+
 
 }
