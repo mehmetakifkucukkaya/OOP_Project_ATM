@@ -10,8 +10,10 @@ public class DigerIslemler{
     DijitalOyunOdemeleri oyun= new DijitalOyunOdemeleri();
     SansOyunlari sansOyunlari = new SansOyunlari();
     BorsaIslemleri borsa = new BorsaIslemleri();
-    KrediIslemleri arabakredi = new ArabaKredi();
-    KrediIslemleri evKredi = new EvKredi();
+    IKrediIslemleri arabakredi = new ArabaIKredi();
+    IKrediIslemleri evKredi = new EvIKredi();
+    Euro euro = new Euro(musteri.getBakiye());
+    Dolar dolar= new Dolar(musteri.getBakiye());
     int secilenIslem;
     Scanner scanner = new Scanner(System.in);
     Islemler islemler = new Islemler();
@@ -53,7 +55,7 @@ public class DigerIslemler{
                 krediSecim();
                 break;
             case 7:
-                //dovizIslemeri();
+                dovizSecim();
                 break;
             case 8:
                 borsa.borsaMenu();
@@ -89,7 +91,29 @@ public class DigerIslemler{
             System.out.println("Geçersiz işlem seçtiniz!");
             menu();
         }
-
-
     }
+
+    public void dovizSecim () {
+        int secimDoviz;
+
+        System.out.println("1-) Euro");
+        System.out.println("2-) Dolar");
+
+        System.out.println("Lütfen doviz türünü seçiniz: ");
+        secimDoviz = scanner.nextInt();
+
+        if(secimDoviz == 1)
+        {
+            euro.dovizMenu();
+        }
+        else if(secimDoviz == 2)
+        {
+            dolar.dovizMenu();
+        }
+        else {
+            System.out.println("Geçersiz işlem seçtiniz!");
+            menu();
+        }
+    }
+
 }

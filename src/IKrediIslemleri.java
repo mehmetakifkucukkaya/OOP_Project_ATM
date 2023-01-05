@@ -1,7 +1,6 @@
 import java.text.DecimalFormat;
-import java.util.Scanner;
 
-public interface KrediIslemleri {
+public interface IKrediIslemleri {
     DecimalFormat formatter = new DecimalFormat("###,###.##"); //Double sayıların virgülden sonra kaç basamak gözükeceğini belirlememizi sağlayan nesne.
      void krediMenu();
 

@@ -1,4 +1,4 @@
-public class SinavOdemeleri extends Islemler{
+public class SinavOdemeleri extends Islemler {
     private  int sinavSecim;
     private double  yks = 230, yds = 115, kpss = 130;
     public void sinavMenu()

@@ -1,7 +1,7 @@
 import java.util.Map;
 import java.util.Scanner;
 
-public class BagisIslemleri extends Islemler{
+public class BagisIslemleri extends Islemler {
 
     Scanner scanner = new Scanner(System.in);
     int secilenVakif;

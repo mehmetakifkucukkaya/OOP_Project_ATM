@@ -1,6 +1,8 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Islemler{
+    DecimalFormat formatter = new DecimalFormat("###,###.##"); //Double sayıların virgülden sonra kaç basamak gözükeceğini belirlememizi sağlayan nesne.
 
     int gonderilecekNo, secilenIslem;
     double yatirilanTutar,cekilenTutar,gonderilecekTutar;

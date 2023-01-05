@@ -1,4 +1,4 @@
-public class IslemSonuMesaji implements Mesajlar{
+public class IslemSonuMesaji implements IMesajlar {
 
    private char secim;
     @Override
@@ -7,10 +7,26 @@ public class IslemSonuMesaji implements Mesajlar{
         secim = scanner.next().charAt(0);
 
         if (secim == 'E' || secim == 'e') {
+            System.out.println("İşlem menüsüne dönülüyor...");
+            try {
+                Thread.sleep(1800);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
             islemler.islemMenu();
 
         }
-        if (secim == 'H' || secim == 'h') {
+        else if (secim == 'H' || secim == 'h') {
+            System.out.println("Çıkış Yapılıyor");
+            try {
+                Thread.sleep(1800);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+            islemler.cikisYap();
+        }
+        else {
+            System.out.println("Geçersiz giriş");
             islemler.cikisYap();
         }
     }

@@ -1,4 +1,4 @@
-public class YetersizBakiyeMesaji implements Mesajlar{
+public class YetersizBakiyeMesaji implements IMesajlar {
     @Override
     public void mesaj() {
         System.out.println("Hesabınızda yeterli bakiye bulunmamaktadır!");

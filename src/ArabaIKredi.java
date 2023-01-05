@@ -1,7 +1,6 @@
-import java.text.DecimalFormat;
 import java.util.Map;
 
-public class ArabaKredi extends Islemler implements KrediIslemleri {
+public class ArabaIKredi extends Islemler implements IKrediIslemleri {
 
     int vadeAraba;
     double krediTutari,odencekTutar,faizOraniAraba;
@@ -31,7 +30,7 @@ public class ArabaKredi extends Islemler implements KrediIslemleri {
             faizHesapla(12);
             odencekTutar = faizHesapla(krediTutari) ;
             System.out.println("Ödenecek Tutar "+ odencekTutar + " TL");
-            System.out.println("Aylik Ödenecek Tutar "+ formatter.format(aylikOdemeHesapla(vadeAraba))+" TL");
+            System.out.println("Aylik Ödenecek Tutar "+ IKrediIslemleri.formatter.format(aylikOdemeHesapla(vadeAraba))+" TL");
             islemSonuMesaji.mesaj();
         }
         else if(vadeAraba == 24)
@@ -40,7 +39,7 @@ public class ArabaKredi extends Islemler implements KrediIslemleri {
             faizHesapla(24);
             odencekTutar = faizHesapla(krediTutari) ;
             System.out.println("Ödenecek Tutar "+ odencekTutar + " TL");
-            System.out.println("Aylik Ödenecek Tutar "+ formatter.format(aylikOdemeHesapla(vadeAraba))+" TL");
+            System.out.println("Aylik Ödenecek Tutar "+ IKrediIslemleri.formatter.format(aylikOdemeHesapla(vadeAraba))+" TL");
             islemSonuMesaji.mesaj();
         }
         else if(vadeAraba == 36)
@@ -48,8 +47,8 @@ public class ArabaKredi extends Islemler implements KrediIslemleri {
             faizOraniAraba=1.99;
             faizHesapla(36);
             odencekTutar = faizHesapla(krediTutari) ;
-            System.out.println("Ödenecek Tutar "+ formatter.format(odencekTutar ) +" TL");
-            System.out.println("Aylik Ödenecek Tutar "+ formatter.format(aylikOdemeHesapla(vadeAraba))+" TL");
+            System.out.println("Ödenecek Tutar "+ IKrediIslemleri.formatter.format(odencekTutar ) +" TL");
+            System.out.println("Aylik Ödenecek Tutar "+ IKrediIslemleri.formatter.format(aylikOdemeHesapla(vadeAraba))+" TL");
             islemSonuMesaji.mesaj();
         }
         else {

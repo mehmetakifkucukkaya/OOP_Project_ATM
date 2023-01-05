@@ -1,4 +1,4 @@
-public class FaturaYatir extends  Islemler implements OdemeSablon{
+public class FaturaYatir extends Islemler implements IOdemeSablon {
     private int faturaSecim;
     private double faturaTutari;
     public void faturaMenu()

@@ -1,6 +1,6 @@
 import java.util.Map;
 
-public class EhliyetIslemleri extends  Islemler{
+public class EhliyetIslemleri extends Islemler {
     char ehliyetSecim;
 
     //Ehliyet Ücretleri

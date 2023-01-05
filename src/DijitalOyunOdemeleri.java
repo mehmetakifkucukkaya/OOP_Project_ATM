@@ -1,5 +1,5 @@
 import java.util.Random;
-public class DijitalOyunOdemeleri extends Islemler implements OdemeSablon{
+public class DijitalOyunOdemeleri extends Islemler implements IOdemeSablon {
 
     Random random = new Random();
     private int secim,kod;

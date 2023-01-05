@@ -1,6 +1,6 @@
 import java.util.Map;
 
-public class EvKredi extends Islemler implements KrediIslemleri{
+public class EvIKredi extends Islemler implements IKrediIslemleri {
 
     int vadeEv;
     double krediTutari,odencekTutar,faizOraniEv;
@@ -29,8 +29,8 @@ public class EvKredi extends Islemler implements KrediIslemleri{
             faizOraniEv=1.99;
             faizHesapla(12);
             odencekTutar = faizHesapla(krediTutari) ;
-            System.out.println("Ödenecek Tutar "+ formatter.format(odencekTutar) + " TL");
-            System.out.println("Aylik Ödenecek Tutar "+ formatter.format(aylikOdemeHesapla(vadeEv))+" TL");
+            System.out.println("Ödenecek Tutar "+ IKrediIslemleri.formatter.format(odencekTutar) + " TL");
+            System.out.println("Aylik Ödenecek Tutar "+ IKrediIslemleri.formatter.format(aylikOdemeHesapla(vadeEv))+" TL");
             islemSonuMesaji.mesaj();
         }
         else if(vadeEv == 36)
@@ -39,7 +39,7 @@ public class EvKredi extends Islemler implements KrediIslemleri{
             faizHesapla(24);
             odencekTutar = faizHesapla(krediTutari) ;
             System.out.println("Ödenecek Tutar "+ odencekTutar + " TL");
-            System.out.println("Aylik Ödenecek Tutar "+ formatter.format(aylikOdemeHesapla(vadeEv))+" TL");
+            System.out.println("Aylik Ödenecek Tutar "+ IKrediIslemleri.formatter.format(aylikOdemeHesapla(vadeEv))+" TL");
             islemSonuMesaji.mesaj();
         }
         else if(vadeEv == 60)
@@ -48,7 +48,7 @@ public class EvKredi extends Islemler implements KrediIslemleri{
             faizHesapla(36);
             odencekTutar = faizHesapla(krediTutari) ;
             System.out.println("Ödenecek Tutar "+ odencekTutar + " TL");
-            System.out.println("Aylik Ödenecek Tutar "+ formatter.format(aylikOdemeHesapla(vadeEv))+" TL");
+            System.out.println("Aylik Ödenecek Tutar "+ IKrediIslemleri.formatter.format(aylikOdemeHesapla(vadeEv))+" TL");
             islemSonuMesaji.mesaj();
         }
         else {

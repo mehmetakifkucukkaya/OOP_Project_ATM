@@ -70,7 +70,7 @@ public class AnaSayfa {
         System.out.println("Lütfen kullanmak istediğiniz müşteri numaranızı girin: ");
         musteri.setMusteriNo(scanner.nextInt());
 
-        System.out.println("Lütfen kulanmak istediğiniz şifrenizi girin: ");
+        System.out.println("Lütfen kullanmak istediğiniz şifrenizi girin: ");
         musteri.setMusteriSifre(scanner.nextInt());
 
         System.out.println("Hesabınız Başarıyla Oluşturuldu");

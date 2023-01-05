@@ -1,5 +1,5 @@
 import java.util.Random;
-public class SansOyunlari extends Islemler implements OdemeSablon{
+public class SansOyunlari extends Islemler implements IOdemeSablon {
 
     Random random = new Random();
     private int uyeId, secim, kod;
